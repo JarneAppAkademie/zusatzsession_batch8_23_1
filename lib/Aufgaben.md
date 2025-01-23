@@ -7,7 +7,7 @@
    - Ändere die Farbe des blauen Containers zu einer beliebigen anderen Farbe.
 
 3. **`MainAxisAlignment` und `CrossAxisAlignment` der Row anpassen:**
-   - Passe die `mainAxisAlignment` und `crossAxisAlignment` der `Row` so an, dass die Widgets an den oberen Rand ausgerichtet sind.
+   - Passe die `mainAxisAlignment` und `crossAxisAlignment` der `Row` so an, dass die Widgets an den oberen Rand ausgerichtet sind und rechts.
 
 4. **Ein `Positioned` Widget verschieben:**
    - Verschiebe das rote `Positioned`-Widget innerhalb des `Stack` auf eine andere Position, z. B. `left: 100`, `top: 20`.
@@ -25,4 +25,4 @@
    - Erstelle ein neues Widget (z. B. `CustomContainer`), das einen Container mit dynamischer Farbe darstellt. Füge zwei Instanzen dieses Widgets in die `Column` ein, jede mit einer anderen Farbe.
 
 9. **Zu einem neuen Screen navigieren:**
-    - Nutze den vorhandenen Button „Zum neuen Screen navigieren“, um die Navigation zu testen. Füge außerdem auf dem neuen Screen ein weiteres Widget hinzu, z. B. ein Icon.
+    - Nutze den vorhandenen Button „Zum neuen Screen navigieren“, um die Navigation zu testen. Erstelle einen neuen Screen

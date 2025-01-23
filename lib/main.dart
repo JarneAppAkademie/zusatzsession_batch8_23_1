@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zusatzsession_batch8_23_1/Widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,13 +29,15 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Text("Neuer Text"),
               Container(
                 width: 100,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Colors.red,
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: [
                     BoxShadow(
@@ -68,7 +71,12 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 50,
+                left: 100,
+                top: 100,
+                child: Text("Unter rotem Container"),
+              ),
+              Positioned(
+                left: 200,
                 top: 50,
                 child: Container(
                   width: 100,
@@ -87,12 +95,17 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          ElevatedButton(
-            onPressed: () {
-              // Aufgabe: Funktion hier hinzufügen
-            },
-            child: Text('Button ohne Funktion'),
+
+          Row(
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Button ohne Funktion'),
+              ),
+              CustomContainer(color: Colors.green),
+            ],
           ),
+          CustomContainer(color: Colors.amber),
           ElevatedButton(
             onPressed: () {},
             child: Text('Zum neuen Screen navigieren'),
