@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zusatzsession_batch8_23_1/Car.dart';
 import 'package:zusatzsession_batch8_23_1/Widgets.dart';
 
 void main() {
@@ -6,6 +7,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  
+  List<Car> carList = [
+  Car(brand: 'BMW', model: 'X5', year: 2022),
+  Car(brand: 'Audi', model: 'A6', year: 2021),
+  Car(brand: 'Mercedes', model: 'C-Class', year: 2023),
+  Car(brand: 'Volkswagen', model: 'Golf', year: 2020),
+  Car(brand: 'Toyota', model: 'Corolla', year: 2019),
+];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: HomeScreen());
